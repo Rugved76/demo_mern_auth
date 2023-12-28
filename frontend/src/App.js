@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 import { Home } from "./Home";
 import './App.css';
 
-export const url = `http://localhost:4000`
+export const url = `https://mernbackserver.onrender.com`
 
 function App() {
     return (
