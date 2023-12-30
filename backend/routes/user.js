@@ -73,8 +73,10 @@ export const verifyToken = (req, res) => {
     }
 };
 
+router.get('/',verifyToken,(req,res)=>{
+    res.send('Server is up and running ...');    
+})
 
-router.get("/", verifyToken);
 router.post("/", verifyToken)    // No post request is goint from "/" though
 
 export { router as userRouter }
